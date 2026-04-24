@@ -30,8 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files (do NOT commit secrets)
+# .env.local and .env are gitignored
+# Add DATABASE_URL in Vercel dashboard instead
+.env
+.env.local
+.env.*.local
 
 # vercel
 .vercel
